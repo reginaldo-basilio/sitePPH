@@ -20,7 +20,7 @@
                         <a href="/" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Novo usuário</a>
+                        <a href="/usuario/cadastro_usuario" class="nav-link">Cadastre-se</a>
                     </li>
                 </ul>
             </div>

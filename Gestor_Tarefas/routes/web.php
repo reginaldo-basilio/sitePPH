@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\TarefaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/', [TarefaController::class, 'index']);
+Route::get('/usuario/cadastro_usuario', [UsuarioController::class, 'create']);
+Route::get('/tarefa/cadastro_tarefa', [TarefaController::class, 'create']);
 
 Route::get('/', function () {
     return view('welcome');
